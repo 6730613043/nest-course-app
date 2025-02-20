@@ -24,8 +24,16 @@ export class AppController {
   getJson() {
     return this.appService.getJson();
   }
-@Get('/showjson2')//localhost3000/showjson2
-getJson2(){ 
-  return this.appService.getJSon2();
-}
+  @Get('/showjson2')//localhost:3000/showjson2
+  getJson2()  {
+    return this.appService.getJson2();
+  }
+  @Get('/showgit') //localhost:3000/showgit
+  getGit(): string {
+    return this.appService.getGit();
+  }
+  @Get('/usepostman') //localhost:3000/usepostman
+  getPostman(): string {
+    return this.appService.getPostman();
+  }
 }

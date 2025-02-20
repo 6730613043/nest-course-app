@@ -16,16 +16,23 @@ export class AppService {
 
   getJson() {
     return {
-      name: "Vladimir",
-      lastname: "Ilenko",
-      age: 39,
+      name: 'Vladimir',
+      lastname: 'Ilenko',
+      age: 16,
     };
   }
-  getJson2(){
-    return{
+  getJson2() {
+    return {
       name: 'Vladimir2',
       lastname: 'Ilenko2',
-      age:16,
+      age: 16,
     };
   }
+  getGit(): string {
+    return 'git and github using';
+  }
+  getPostman(): string {
+    return 'We use postman';
+  }
 }
+
